@@ -1,0 +1,8 @@
+// return the dataview which contains a reference to the arrayBuffer
+const createMemory = sizeInBytes => {
+    const ab = new ArrayBuffer(sizeInBytes);
+    const dv = new DataView(ab);
+    return dv;
+}
+
+module.exports = createMemory;
